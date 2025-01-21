@@ -178,10 +178,6 @@ def pupils_by_school():
     if len(matching_regions) == 1:
         selected_region = matching_regions[0]
         st.write("Ви обрали регіон:", selected_region)
-    elif len(matching_regions) > 1:
-        st.write("Згідно введеного паттерну знайдено більше одного регіону. Будь ласка, уточніть пошук")
-        for region in matching_regions:
-            st.write(region)
     else:
         st.write("Ой лишенько! Не знайдено жодного регіону... Будь ласка, спробуйте уважніше")
     filtered_df = data[data[REGNAME_COLUMN].isin(matching_regions)]
