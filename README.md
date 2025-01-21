@@ -11,8 +11,8 @@
 * Взаємодія з віджитами
 ### Робота з минулорічними НМТ
 1. Перейдіть в файловий провідник та запустіть -
-* Window - ~/.streamlit
-* Linox - %userprofile%/.streamlit/
+* Window - %userprofile%/.streamlit/
+* Linox - ~/.streamlit
 2. Створіть файл config.toml
 3. Додайте туди
 [server]
